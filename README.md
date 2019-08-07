@@ -24,17 +24,3 @@
 
 		$ yarn test src/animal-group_test.js --verbose
 
-**Run automation on enviroment which is not window (Mac or Linux)**
-
-    * Run selenium webdriver
-
-            $ cd path/to/chromedriver-folder
-            $ ./chromdirver --port=4444 --url-base=wd/hub
-
-    * Run automation scenario
-   
-            $ npx codeceptjs run src/path/to/scenario-name_test.js
-
-        Example:
-
-            $ npx codeceptjs run src/animal-group_test.js --verbose

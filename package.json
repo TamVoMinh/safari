@@ -1,5 +1,5 @@
 {
-  "name": "safari-e2e",
+  "name": "safari",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
@@ -8,10 +8,13 @@
     "dotenv": "^8.0.0"
   },
   "devDependencies": {
+    "npm-run-all": "^4.1.5",
     "webdriverio": "^5.11.13"
   },
   "scripts": {
-    "test": "START /B driver/chromedriver --port=4444 --url-base=wd/hub && npx codeceptjs run"
+    "driver":"driver/chromedriver --port=4444 --url-base=wd/hub",
+    "e2e": "npx codeceptjs run",
+    "test": "npm-run-all -p driver \"e2e -- {@}\" --"
   },
   "author": "",
   "license": "ISC"
