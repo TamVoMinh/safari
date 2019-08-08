@@ -10,7 +10,9 @@
         $ npm i
 
 1. Download selenium driver [`chrome 75.0.3770.140`](https://sites.google.com/a/chromium.org/chromedriver/downloads)
-1. Extract & save chromedriver as `safari/dirver/chromedriver.exe`
+1. Extract & save chromedriver as `safari/driver/chromedriver.exe`
+1. Rename [varible.env](varible.env) to .env
+1. Update environment variables in .env file
 
 1. Run automation test
     
