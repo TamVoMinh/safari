@@ -13,7 +13,7 @@ url = '/AnimalGroup/create';
 module.exports =  [
   url,
   {
-    I_See_Group_Animal_Form(){
+    See_Group_Animal_Form(){
       I.seeElement(input_groupName);
       I.seeElement(input_groupDesc);
       I.seeElement(btn_add_new_group);
@@ -21,7 +21,7 @@ module.exports =  [
       I.seeElement(option_1st_animal);
       I.seeElement(option_2nd_animal);
     },
-    I_Create_New_Group(name, desc, concretes ){
+    Create_New_Group(name, desc, concretes ){
   
       I.fillField(input_groupName, name);
       I.fillField(input_groupDesc, desc);

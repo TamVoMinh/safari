@@ -8,11 +8,11 @@ const url = '/WebsiteProject_deploy/Login?ReturnUrl=%2f';
 module.exports =  [
   url,
   {
-    I_See_Login_Form(){
+    See_Login_Form(){
       I.seeElement(input_userName);
       I.seeElement(input_password);
     },
-    I_Login_With(userName, password){
+    Login_With(userName, password){
   
       I.fillField(input_userName, userName);
       I.fillField(input_password, password);

@@ -3,8 +3,14 @@
 
 module.exports = () => {
   return actor({
-    accessTo: async function([page_url, in_Page]) {
+    goTo: async function([page_url, in_Page]) {
       await this.amOnPage(page_url);
+      in_Page.prototype = this;
+      return in_Page;
+    },
+    amOn: async function([page_url, in_Page]){
+      this.seeInCurrentUrl(page_url);
+      in_Page.prototype = this;
       return in_Page;
     }
   });
