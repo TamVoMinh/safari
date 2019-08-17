@@ -1,5 +1,5 @@
 const {supperAccount, supperPwd} = require('./env');
-Feature('Test Animal Group');
+Feature('Animal Group');
 
 Scenario('Create new group', async (I, logInPage, animalGroupPage) => {
 
